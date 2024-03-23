@@ -6,9 +6,11 @@
     <title>About Page</title>
   </head>
   <body>
+    <p>This server is being served from {{ $_SERVER['DOCUMENT_ROOT'] }}</p>
+    <p>Server Software: {{ $_SERVER['SERVER_SOFTWARE'] }}</p>
+    <p>Client Machine: {{ $_SERVER['HTTP_USER_AGENT'] }}</p>
     <pre>
       {{ var_dump($GLOBALS) }} 
-      {{ "hello worddd" }}
     </pre>
   </body>
 </html>
